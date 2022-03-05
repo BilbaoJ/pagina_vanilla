@@ -129,23 +129,27 @@
          <div class="column">
             <center>
                <p>
-                  <b>Contacto</b> +57 380 808 0808
+                  <b>Contacto: </b> +57 380 808 0808
                   <br>
-                  <b>Email</b> <a href="mailto:restaurante@udemedellin.edu.co">restaurante@udemedellin.edu.co</a>
+                  <b>Email: </b> <a href="mailto:restaurante@udemedellin.edu.co">restaurante@udemedellin.edu.co</a>
                   <br>
                   Medellín - Colombia
                </p>
             </center>
          </div>
          <div class="column">
-
-            <form action="">
+            <h2>Registro</h2>
+            <form action="javascript:void(0)" onsubmit="obtenerValoresFormulario()">
                <input type="email" placeholder="Ingrese su correo" id="txtCorreo">
                <br>
-               <input type="text" placeholder="Ingrese su solicitud" id="txtAsunto">
+               <input type="text" placeholder="Ingrese su nombre" id="txtNombre">
                <br>
-               <textarea type="text" placeholder="Ingrese su descripción" id="txtDescripcion" cols="30"
-                  rows="10"></textarea>
+               <input type="text" placeholder="Ingrese su celular" id="txtCelular">
+               <br>
+               <input type="password" placeholder="Ingrese una contraseña" id="txtClave">
+               <br>
+               <textarea type="text" placeholder="Ingrese su dirección" id="txtDireccion" cols="30"
+                  rows="2"></textarea>
                <br>
                <input type="submit" value="Enviar datos">
             </form>
@@ -154,7 +158,7 @@
       </div>
 
    </footer>
-
+   <script src="./index.js"></script>
 </body>
 
 </html>

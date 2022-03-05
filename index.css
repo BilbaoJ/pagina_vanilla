@@ -12,7 +12,7 @@ body{
 
 #app::before{
     content: "";
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.8);
     bottom: 0;
     right: 0;
     top: 0;
@@ -42,7 +42,7 @@ body{
 .nav-menu ul li a{
     text-decoration: none;
     color: aliceblue;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .nav-menu a:hover{
@@ -77,10 +77,14 @@ h1{
 }
 
 #registro{
-    background-color: rgb(42, 43, 56);
+    background-color: rgb(21, 22, 27);
     color: aliceblue;
     font-size: 16px;
     padding-top: 10px;
+}
+
+#registro a{
+    color: aliceblue;
 }
 
 .flecha{
@@ -93,7 +97,7 @@ h1{
 
 .mi-flecha{
     width: 2vw;
-    height: 2vh;
+    height: 2vw;
     border: 0.5vw solid;
     border-color: aliceblue transparent transparent aliceblue;
     transform: rotate(-136deg);
