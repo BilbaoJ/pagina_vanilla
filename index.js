@@ -7,6 +7,12 @@ function obtenerValoresFormulario() {
     let celular = document.getElementById("txtCelular").value;
     let clave = document.getElementById("txtClave").value;
     let direccion = document.getElementById("txtDireccion").value;
+
+    if (correo == "") {
+        document.getElementById("lblAlerta").style.display="";
+        document.getElementById("lblAlerta").innerText="El correo es obligatorio";
+        return;
+    }
     
     // Forma de crear un objeto (clave-valor)
 
@@ -21,7 +27,17 @@ function obtenerValoresFormulario() {
     usuario["nombre"] = nombre;
 
     console.log(usuario);
-    
+
+    document.getElementById("txtNombre").value = "";
+    document.getElementById("txtCelular").value = "";
+    document.getElementById("txtCorreo").value = "";
+    document.getElementById("txtClave").value = "";
+    document.getElementById("txtDireccion").value = ""; 
 };
 
+function cargarPagina() {
+    document.getElementById("lblAlerta").style.display="none";
+}
+
+cargarPagina();
 //obtenerValoresFormulario();
